@@ -1,0 +1,30 @@
+social:
+  title: Links
+  list:
+  - title: Mastodon
+    url: https://mastodon.social/@pepelsbey
+  - title: Bluesky
+    url: https://bsky.app/profile/pepelsbey.dev
+  - title: Threads
+    url: https://www.threads.net/@pepelsbey
+  - title: Twitter
+    url: https://twitter.com/pepelsbey_dev
+  - title: Telegram
+    url: https://t.me/pepelsbey_dev
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/pepelsbey/
+
+email:
+  title: Email
+  text: hi@<wbr>pepelsbey.dev
+  link: mailto:hi@pepelsbey.dev
+
+credits:
+  title: Credits
+  list:
+  - title: Handcrafted by me
+    url: https://github.com/pepelsbey/pepelsbey.dev
+  - title: Designed by Mark Shakhov
+    url: https://www.facebook.com/mark.jpeg.71
+  - title: Powered by Eleventy
+    url: https://www.11ty.dev/

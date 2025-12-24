@@ -1,0 +1,12 @@
+title: 'CSS lazy loading is kinda broken in Safari'
+desc: 'Remember this old trick that allowed us to load only critical CSS and defer the rest? The one, that used `media="print"` and `onload` event. I just realized that sometimes it doesn’t work in Safari.'
+date: 2023-02-06
+tags:
+  - CSS
+  - JavaScript
+toc:
+  - title: Lazy demo
+  - title: Full body
+  - title: What now?
+cover: true
+layout: article.njk
