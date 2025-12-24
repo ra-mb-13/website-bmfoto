@@ -1,28 +1,60 @@
-# Vadim Makeev’s website
+# Neat Starter
 
-[![EditorConfig](https://github.com/pepelsbey/pepelsbey.dev/actions/workflows/editorconfig.yml/badge.svg)](https://github.com/pepelsbey/pepelsbey.dev/actions/workflows/editorconfig.yml)
-[![Stylelint](https://github.com/pepelsbey/pepelsbey.dev/actions/workflows/stylelint.yml/badge.svg)](https://github.com/pepelsbey/pepelsbey.dev/actions/workflows/stylelint.yml)
-[![ESLint](https://github.com/pepelsbey/pepelsbey.dev/actions/workflows/eslint.yml/badge.svg)](https://github.com/pepelsbey/pepelsbey.dev/actions/workflows/eslint.yml)
+Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
 
-Special thanks to [@monochromer](https://github.com/monochromer) for Eleventy transforms.
+## Live Demo
 
-## Development
+[https://neat-starter.netlify.app/](https://neat-starter.netlify.app/)
 
-- Install dependencies: `npm install`
-- Start local server: `npm start`
-- Build for production: `npm run build`
-- Lint code: `npm test`
+### Technologies used:
 
-## License
+- [Netlify CMS](https://www.netlifycms.org/)
+- [Eleventy](https://www.11ty.dev/)
+- [Alpine.js](https://github.com/alpinejs/alpine)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-- The code is licensed under [MIT](MIT.md)
-- The content is licensed under [CC BY-NC-SA 4.0](CC.md)
+| ![image](https://user-images.githubusercontent.com/1884712/93762662-a62e4700-fc2d-11ea-9b2c-fda9f503402b.png) |
+| ------------------------------------------------------------------------------------------------------------- |
 
-You can use the parts of the code for any purpose, but not the website as a whole. Because then it will be a copy of the design, which belongs to me. Feel free to use the content for non-commercial purposes with the link to the original source while keeping the license.
 
-Some fonts used on this website are free to use under [Open Font License](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=ofl):
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
 
-- [Inter](https://github.com/rsms/inter)
-- [JetBrains Mono](https://www.jetbrains.com/lp/mono/)
+## Getting Started
 
-But you can’t use the [Neue Machina](https://pangrampangram.com/products/neue-machina) font unless you buy it from Pangram Pangram Foundry as I did.
+Detailed instructions are available in my blog. [Check it out](https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss)
+
+### 1\. Clone this Repository
+
+```
+git clone https://github.com/surjithctly/neat-starter.git
+```
+
+### 2\. Navigate to the directory
+
+```
+cd neat-starter
+```
+
+### 3\. Install dependencies
+
+```
+npm install
+```
+
+### 4\. Build the project to generate the first CSS
+
+This step is only required the very first time.
+
+```
+npm run build
+```
+
+### 5\. Run Eleventy
+
+```
+npm run start
+```
+
+## Author
+
+Surjith S M ( [@surjithctly](https://surjithctly.in/) )
