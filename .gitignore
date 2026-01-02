@@ -6,6 +6,11 @@ node_modules/
 *git/
 package-lock.json
 .env
+.venv/
 
 # Local Netlify folder
 .netlify
+
+scrapping/
+
+.github/

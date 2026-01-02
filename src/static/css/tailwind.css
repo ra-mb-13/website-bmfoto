@@ -18,3 +18,143 @@ body :not(pre) > code[class*="language-"],
 body pre[class*="language-"] {
   @apply bg-gray-800;
 }
+
+.main-gallery {
+  max-width: 1100px;
+  margin: 3rem auto 0 auto;
+}
+
+.gallery-h1 {
+  text-align: center;
+  margin-bottom: 4.25rem;
+}
+
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  max-width: 1100px;
+  gap: 50px;
+  margin: 1.5rem auto 1rem auto;
+  list-style: none;
+}
+
+.gallery-item {
+  margin: 0.5rem auto;
+  width: 100%;
+}
+.gallery-item:last-child {
+  border-bottom: none;
+}
+.gallery-item .image-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 80ch;
+}
+.gallery-item .image-block .block-details {
+  margin: 1rem 0 0;
+}
+.gallery-item .image-block .block-details p {
+  margin-bottom: 0;
+  color: #333;
+}
+.gallery-item a {
+  color: #212121;
+}
+.gallery-item a .gallery-photo {
+  max-width: 100%;
+  height: 500px;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 2px;
+  filter: brightness(99%);
+  transition: filter 0.5s ease;
+}
+.gallery-item a .gallery-photo:hover {
+  filter: brightness(105%);
+  transform-origin: 50% 50%;
+  cursor: pointer;
+}
+
+.image-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 3px;
+  max-width: 1100px;
+  margin: 1rem auto 3rem auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.image-grid .image-container {
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.image-grid .image-container a .grid-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transform-origin: 50% 50%;
+  filter: brightness(99%);
+  transition: filter 0.5s ease;
+}
+.image-grid .image-container a img:hover {
+  filter: brightness(110%);
+  box-shadow: 0px 0px 0px 2px #000;
+  transform-origin: 50% 50%;
+  cursor: pointer;
+}
+.image-grid .image-container a:focus img {
+  border: 3px solid #07c;
+}
+
+.featured-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.featured-img .image-container {
+  width: 100%;
+  max-width: 1050px;
+  padding: 0;
+}
+.featured-img .showcase-img {
+  object-fit: cover;
+  /* object-fit: contain; this is best but causes letterboxing" */
+  max-width: 100%;
+  height: 90vh;
+  max-height: 600px;
+  margin: 1rem auto 1rem auto;
+}
+.featured-img .prev-next {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.featured-img .prev-next a {
+  padding: 7px 10px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  text-decoration: none;
+  background: inherit;
+  font-size: 1em;
+  color: #333;
+  background: rgb(242, 242, 242);
+}
+.featured-img .prev-next a:hover {
+  background: rgb(237, 237, 237);
+}
+.featured-img .image-description .credit {
+  text-decoration: underline;
+}
+.featured-img .image-description .credit:hover {
+  text-decoration: none;
+}

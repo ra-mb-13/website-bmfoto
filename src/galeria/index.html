@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="bg-white min-h-screen
+            pt-5 md:pt-15 lg:pt-15">
+    <div class="container mx-4 md:mx-8 lg:mx-auto lg:max-w-6xl 
+              min-h-screen 
+              pt-10 md:pt-20 lg:pt-20
+              pb-5 md:pb-10 lg:pb-10
+              flex flex-col items-center">
+        <div class="gallery">
+        <ul class="image-grid">
+            {% for image in gallery %}
+            <li class="image-container">
+                <a
+                href="/galeria/{{ image.slug }}/"
+                aria-label="Gallery image {{ image.title }}"
+                >
+                {% img
+                    src=image.src,
+                    alt=image.alt,
+                    className="grid-image",
+                    sizes="(min-width: 600px) 50vw, (min-width: 800px) 100vw, 33.3vw"
+                %}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        </div>
+    </div>
+</div>

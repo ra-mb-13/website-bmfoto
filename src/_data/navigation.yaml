@@ -1,10 +1,8 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
+  - text: Sobre mim
+    url: "/sobre-mim"
+  - text: Galeria
+    url: "/galeria"
   - text: Blog
     url: "/blog"

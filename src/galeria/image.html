@@ -1,0 +1,41 @@
+---
+pagination:
+    data: gallery
+    size: 1
+    alias: image
+permalink: "/galeria/{{ image.slug }}/"
+layout: default
+---
+
+<div class="container mx-4 md:mx-8 lg:mx-auto lg:max-w-6xl 
+              min-h-screen 
+              pt-10 md:pt-20 lg:pt-20
+              pb-5 md:pb-10 lg:pb-10
+              flex flex-col items-center">
+    <div class="featured-img">
+        <div class="image-container">
+            {% img
+                src=image.src,
+                alt=image.alt,
+                className="showcase-img",
+                sizes="(max-width: 480px) 33.3vw, (min-width: 640px) 50vw, (min-width: 1000px) 100vw, 33.3vw"
+            %}
+            <div class="image-description">
+                <h1 class="h2">{{ image.title }}</h1>
+                <p>{{ image.credit }} on <a class="credit" href="{{ image.linkToAuthor }}">Pexels</a></p>
+            </div>
+            <div class="prev-next">
+                {% if pagination.href.previous %}
+                    <a class="prev" href="{{ pagination.href.previous }}"><span class="lt">&lt;</span> Prev</a>
+                {% endif %}
+                {% if pagination.href.next %}
+                    {% if not pagination.href.previous %}
+                    <a class="next" style="margin-left: auto; margin-right: 0;" href="{{ pagination.href.next }}">Next <span class="gt">&gt;</span></a>
+                    {% else %}
+                    <a class="next" href="{{ pagination.href.next }}">Next <span class="gt">&gt;</span></a>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
